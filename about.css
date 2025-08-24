@@ -1,0 +1,118 @@
+/* About Page Specific Styles - Centered Content with Theme Colors */
+
+/* Container */
+#about-page .about-container {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center; /* Center all content */
+  color: #333; /* Default text color */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hero / Overview */
+#about-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  color: #015b90; /* Primary theme color */
+}
+
+#about-hero .about-slogan {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #015b90; /* Secondary color */
+  margin-bottom: 1rem;
+}
+
+#about-hero .about-overview {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Section headings */
+#about-page h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #015b90; /* Primary theme color */
+}
+
+/* Focus area list */
+.about-focus-list {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  line-height: 1.6;
+}
+
+.about-focus-list li {
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+#about-page strong {
+  color: #015b90;
+}
+
+
+/* Highlight program keywords in secondary color */
+.about-focus-list li strong {
+  color: #015b90; /* Secondary theme color */
+}
+
+/* Impact items */
+.impact-item {
+  display: block;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Team */
+.about-team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center team members */
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.team-member {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 3px solid #015b90; /* Accent border using primary color */
+}
+
+.team-member h3 {
+  color: #015b90; /* Primary color for names */
+}
+
+.team-member p {
+  color: #555; /* Slightly muted for roles */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-team-members {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #about-hero h1 {
+    font-size: 2rem;
+  }
+
+  #about-page h2 {
+    font-size: 1.4rem;
+  }
+}

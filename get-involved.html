@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get involved with Future Forwards Initiative through volunteering, partnership, or support.">
+  <title>Get Involved - Future Forwards Initiative</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./future.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-logo">
+        <a href="./index.html"><img src="./Assets/logo.jpg" alt="Logo"></a>
+        <span>Future Forwards Initiative</span>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./mission.html">Mission</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./activities.html">Activities</a></li>
+        <li><a href="./programs.html">Programs</a></li>
+        <li><a href="./get-involved.html" class="active">Get Involved</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Get Involved Header -->
+  <header class="hero small-hero">
+    <div class="container">
+      <h1>Get Involved</h1>
+      <p>Be part of the change. Volunteer, partner with us, or support our mission.</p>
+    </div>
+  </header>
+
+  <!-- Volunteer Section -->
+  <section id="volunteer" class="involved">
+    <div class="container">
+      <h2>Volunteer With Us</h2>
+      <p>Be part of our mission by giving your time, skills, and energy. Volunteers are the heart of our work in Kakuma, helping to empower youth, strengthen education, and promote peacebuilding.</p>
+      
+      <div class="volunteer-options">
+        <div class="option">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Teach & Mentor</h3>
+          <p>Support learners by teaching literacy, numeracy, or mentoring young leaders.</p>
+        </div>
+        <div class="option">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3>Community Outreach</h3>
+          <p>Engage with the community through peacebuilding, gender advocacy, and awareness programs.</p>
+        </div>
+        <div class="option">
+          <i class="fas fa-users"></i>
+          <h3>Event Support</h3>
+          <p>Assist in organizing community events, youth trainings, and workshops.</p>
+        </div>
+      </div>
+
+      <!-- Volunteer Section Trigger -->
+      <div class="volunteer-signup">
+        <a href="#" id="volunteerBtn" class="cta-button">Sign Up to Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Modal -->
+  <div id="volunteerModal" class="volunteer-modal">
+    <div class="modal-content small-modal">
+      <span class="close-modal">&times;</span>
+      <h3 class="modal-title">Volunteer Signup</h3>
+
+      <form id="volunteer-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Phone" required>
+        </div>
+        <div class="form-group">
+          <select name="interest" required>
+            <option value="">Select Area of Interest</option>
+            <option value="teaching">Teaching & Mentorship</option>
+            <option value="outreach">Community Outreach</option>
+            <option value="events">Event Support</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Message (Optional)"></textarea>
+        </div>
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- About -->
+      <div class="footer-about">
+        <img src="./Assets/logo.jpg" alt="CBO Logo" class="footer-logo">
+        <p>Future Forwards Initiative empowers Kakuma communities through
+          education, youth empowerment, and peacebuilding.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="./programs.html">Programs</a></li>
+          <li><a href="./get-involved.html">Join Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: futureforwardsorg@gmail.com</p>
+        <p>Phone: +254 759 949074</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Future Forwards Initiative. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./future.js"></script>
+</body>
+
+</html>
