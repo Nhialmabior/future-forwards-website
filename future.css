@@ -103,6 +103,39 @@ body {
     color: #333;
 }
 
+/* Hero Section with Background Image */
+.hero {
+  background: url("./Assets/logo.jpg") no-repeat center center/cover;
+  color: white;                 
+  text-align: center;
+  padding: 100px 20px;          
+  position: relative;
+  min-height: 20vh; /* ensure image takes space */
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  transition: background 0.4s ease;
+}
+
+/* Hover effect */
+.hero:hover::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2; /* text stays above overlay */
+}
+
 .section-intro {
     text-align: center;
     max-width: 700px;
@@ -385,6 +418,12 @@ body {
     color: #fff;
     margin-top: 1rem;
 }
+
+.form-status {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
 /* ================================
    Get Involved Page
 ================================ */
@@ -444,6 +483,16 @@ body {
     position: relative;
 }
 
+/* Default modal size (mobile-first, full width) */
+.volunteer-modal .modal-content {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
 /* Modal Title */
 .modal-title {
     font-size: 1.4rem;
@@ -469,6 +518,8 @@ body {
 /* Form */
 .contact-form .form-group {
     margin-bottom: 1rem;
+    display: block;
+    width: 100%;
 }
 
 .contact-form input,
@@ -479,6 +530,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 0.95rem;
+    box-sizing: border-box;
 }
 .contact-form input:focus,
 .contact-form select:focus,
@@ -503,6 +555,7 @@ body {
     font-weight: 600;
     transition: background 0.3s ease, transform 0.2s ease;
     width: 100%;
+    margin-top: 10px;
 }
 .contact-form button:hover {
     background: #0077cc;
@@ -621,6 +674,50 @@ body {
 .social-icon:hover .tooltip {
     opacity: 1;
     bottom: 150%;
+}
+
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease; /* smooth hover effect */
+}
+
+/* Facebook */
+.social-icons a .fa-facebook-f {
+  color: #fff; /* official blue */
+}
+.social-icons a:hover .fa-facebook-f {
+  color: #1877F2; /* stays blue */
+  transform: scale(1.2);
+}
+
+/* LinkedIn */
+.social-icons a .fa-linkedin {
+  color: #fff; /* official blue */
+}
+.social-icons a:hover .fa-linkedin {
+  color: #0077B5; /* stays blue */
+  transform: scale(1.2);
+}
+
+/* WhatsApp */
+.social-icons a .fa-whatsapp {
+  color: #fff; /* official green */
+}
+.social-icons a:hover .fa-whatsapp {
+  color: #25D366; /* stays green */
+  transform: scale(1.2);
+}
+
+/* Mail */
+.social-icons a .fa-envelope {
+  color: #fff; /* Google red style */
+}
+.social-icons a:hover .fa-envelope {
+  color: #EA4335; /* stays red */
+  transform: scale(1.2);
 }
 
 .footer {
@@ -762,7 +859,23 @@ body {
     .hero p {
         font-size: 1rem;
     }
+    .volunteer-modal .modal-content.small-modal {
+    width: 40%;  /* Make it smaller on big screens */
+    max-width: 450px;
+    padding: 25px;
+  }
+
+  .volunteer-modal .modal-title {
+    font-size: 1.3rem; /* Slightly smaller text */
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
 }
+
 
 /* 📱 Mobile (480px and below) */
 @media (max-width: 480px) {

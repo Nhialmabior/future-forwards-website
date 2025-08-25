@@ -154,3 +154,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const form = document.querySelector('.contact-form');
+  const statusDiv = document.getElementById('form-message');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    statusDiv.textContent = 'Sending...';
+    statusDiv.style.color = '#015b90'; // Primary theme color
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        statusDiv.textContent = 'Thanks for your message! We’ll be in touch.';
+        form.reset();
+        statusDiv.style.color = 'green';
+      } else {
+        statusDiv.textContent = 'Oops! Something went wrong. Please try again.';
+        statusDiv.style.color = 'red';
+      }
+    } catch (error) {
+      statusDiv.textContent = 'Network error—please try again later.';
+      statusDiv.style.color = 'red';
+    }
+  });

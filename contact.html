@@ -36,12 +36,16 @@
     <h1 class="section-title">Contact Us</h1>
     <p class="section-intro">If you’d like to reach out, please use the form below or contact us directly.</p>
 
-    <form class="contact-form" action="mailto:futureforwardsorg@gmail.com" method="post" enctype="text/plain">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <form class="contact-form" action="https://formspree.io/f/mjkebrkr" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<!-- Message display -->
+<div id="form-message" class="form-status"></div>
+
   </div>
 </section>
 
@@ -74,9 +78,10 @@
       <p>Email: futureforwardsorg@gmail.com</p>
       <p>Phone: +254 759 949074</p>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/FutureForwardsInitiative"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/future-forwards-org-841851366?utm_source&utm_campaign"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:futureforwardsorg@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/254759949074" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </div>
